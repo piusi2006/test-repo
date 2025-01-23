@@ -15,5 +15,21 @@ The filename is passed as an argument to the script.
 Restriction: All tasks must be done using the topics covered in this and previous chapters.
 
 """
-
 ignore = ["duplex", "alias", "configuration"]
+filename = "config_sw1.txt"
+with open(filename) as f:
+    file = f.read().strip().split('\n')
+    while '!' in file:
+        file.remove('!')
+    for line in file:
+        if ignore[0] in line:
+            pass
+        elif ignore[1] in line:
+            pass
+        elif ignore[2] in line:
+            pass
+        elif '!' in line:
+            pass
+        else:
+            print(line)
+    

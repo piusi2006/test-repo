@@ -26,3 +26,9 @@ this stage it is difficult otherwise test the result.
 """
 
 ip = "192.168.3.1"
+binary = ip.split('.')
+result = f"""
+{int(binary[0]):<10}{int(binary[1]):<10}{int(binary[2]):<10}{int(binary[3]):<10}
+{int(binary[0]):08b}  {int(binary[1]):08b}  {int(binary[2]):08b}  {int(binary[3]):08b}
+"""
+print(result)

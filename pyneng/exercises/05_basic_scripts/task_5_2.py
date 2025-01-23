@@ -25,3 +25,19 @@ You can then take 8 bits of the binary mask using slices and convert them to dec
 
 Restriction: All tasks must be done using the topics covered in this and previous chapters.
 """
+user = input('Please enter your network (format should be e.g. 10.1.1.0/24): ')
+response = user.split('/')
+prefix = response[0].split('.')
+mask = f"/{int(response[1])}"
+binary_mask = '1' * int(response[1]) + '0' * (32 - int(response[1]))
+new_prefix = f"""
+Network:
+{prefix[0]:8}  {prefix[1]:8}  {prefix[2]:8}  {prefix[3]:8}
+{int(prefix[0]):08b}  {int(prefix[1]):08b}  {int(prefix[2]):08b}  {int(prefix[3]):08b}
+
+Mask:
+{mask}
+{int(binary_mask[0:8], 2):<8}  {int(binary_mask[8:16], 2):<8}  {int(binary_mask[16:24], 2):<8}  {int(binary_mask[24:], 2):<8}
+{binary_mask[0:8]:8}  {binary_mask[8:16]:8}  {binary_mask[16:24]:8}  {binary_mask[24:]:8}
+"""
+print(new_prefix)

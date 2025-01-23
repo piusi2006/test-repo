@@ -44,3 +44,5 @@ london_co = {
         "routing": True,
     },
 }
+user_input = input('Please enter the name of your device: ')
+print(f"{london_co[user_input]}")

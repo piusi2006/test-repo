@@ -40,3 +40,14 @@ interface Ethernet0/3
 ...
 
 """
+filename = "config_sw1.txt"
+with open(filename) as f:
+    file = f.read().strip().split('\n')
+    for line in file:
+        if '!' in line:
+            pass
+        else:
+            print(line)
+
+
+        

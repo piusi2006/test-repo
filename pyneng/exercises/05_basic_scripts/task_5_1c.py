@@ -47,3 +47,6 @@ london_co = {
         "routing": True,
     },
 }
+name = input('Enter device name: ')
+parameter = input('Enter parameter name {}: '.format(tuple(london_co[name].keys())))
+print(london_co[name].get(parameter, 'There is no such parameter'))

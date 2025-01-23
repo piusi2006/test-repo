@@ -41,3 +41,23 @@ Then the network address will be the first 28 characters from bin_ip + 0000
 Restriction: All tasks must be done using the topics covered in this and previous chapters.
 
 """
+user = input('Please enter your network (format should be e.g. 10.1.1.0/24): ')
+response = user.split('/')
+network = response[0].split('.')
+mask = response[1]
+maskbits = '1' * int(mask) + '0' * (32-int(mask))
+host_add = """{0:08b}{1:08b}{2:08b}{3:08b}""".format(int(network[0]), int(network[1]), int(network[2]), int(network[3]))
+netbits = host_add[:(int(mask))] + '0' * (32 - int(mask))
+new_net = [int(netbits[0:8], 2), int(netbits[8:16], 2), int(netbits[16:24], 2), int(netbits[24:], 2)]
+result = f"""
+Network:
+{new_net[0]:<8}  {new_net[1]:<8}  {new_net[2]:<8}  {new_net[3]:<8}
+{netbits[0:8]}  {netbits[8:16]}  {netbits[16:24]}  {netbits[24:]}
+
+Mask:
+/{mask}
+{int(maskbits[0:8], 2):<8}  {int(maskbits[8:16], 2):<8}  {int(maskbits[16:24], 2):<8}  {int(maskbits[24:], 2):<8}
+{maskbits[0:8]}  {maskbits[8:16]}  {maskbits[16:24]}  {maskbits[24:]}
+"""
+print(result)
+

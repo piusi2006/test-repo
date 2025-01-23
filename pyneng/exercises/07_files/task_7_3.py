@@ -20,3 +20,13 @@ the following table was printed on the stdout:
 Restriction: All tasks must be done using the topics covered in this and previous chapters.
 
 """
+with open("CAM_table.txt") as f:
+    file = f.read().split('\n')
+    for line in file:
+        if line.startswith(' ') and 'Gi' in line:
+            new_line = line.split()
+            vlan, mac, Type, port = new_line
+            print("""
+{:9}{:20}{}
+""".format(vlan.lstrip(), mac, port).strip('\n'))
+    

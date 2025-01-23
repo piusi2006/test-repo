@@ -40,3 +40,17 @@ if you sort list of lists above.
 Restriction: All tasks must be done using the topics covered in this and previous chapters.
 
 """
+with open("CAM_table.txt") as f:
+    file = f.read().split('\n')
+    vlan_list = []
+    for line in file:
+        if line.startswith(' ') and 'Gi' in line:
+             vlan_list.append(line.split())
+    for item in vlan_list:
+        item[0] = int(item[0])   
+    
+    for vlan in sorted(vlan_list):
+        vlan.remove('DYNAMIC')
+        v, mac, port = vlan
+        print("{:<9}{:20}{}".format(v, mac, port))
+    

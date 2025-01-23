@@ -25,3 +25,15 @@ trunk_template = [
     "switchport mode trunk",
     "switchport trunk allowed vlan {}",
 ]
+mode = input("Enter interface mode (access/trunk): ")
+interface = input("Enter interface type and number: ")
+vlan_prompt = {
+    "access": "Enter VLAN number: ",
+    "trunk": "Enter the allowed VLANs: "
+    }
+VLAN = input(vlan_prompt[mode])
+template = {
+    "access": access_template,
+    "trunk": trunk_template}
+print('\ninterface {}'.format(interface))
+print('\n'.join(template[mode]).format(VLAN))
