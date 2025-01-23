@@ -1,0 +1,54 @@
+#Here is an example of a NETCONF operation using edit-config:
+
+<rpc message-id="101": xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <edit-config>
+    <target>
+        <running/>
+    </target>
+  <config xmlns:nc="urn:ietf:params:xml:ns:netconf:base:1.0">
+    <interfaces xmlns="urn:ietf:params:xml:ns:yang:ietf-interfaces">
+        <interface nc:operation="replace">
+            <name>Ethernet0/0</name>
+            <mtu>1500</mtu>
+        </interface>
+    </interfaces>
+  </config>
+  </edit-config>
+</rpc>
+
+#Here is another example of a NETCONF operation using get:
+<rpc message-id="101" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <get>
+   <filter type="subtree">  #Here is the type of filter we are applying.
+    <native xmlns="http://cisco.com/ns/yang/ned/ios">  #This part is referring to a native XML data object model that is specific to cisco
+     <interface>
+      <GigabitEthernet>
+       <name>1</name>
+      </GigabitEthernet>
+     </interface>
+    </native>
+   </filter>
+  </get>
+</rpc>
+
+#Here is an example of the edit-config NETCONF Operation. Note, if target isn't specified, then the default datastore that will be used is the
+#running-config datastore.
+<rpc message-id="101" xmlns="urn:ietf:params:xml:ns:netconf:base:1.0">
+  <edit-config>
+   <target>
+    <running/>
+   </target>
+   <config>
+    <configuration>
+     <routing-options>
+      <static>
+       <route>
+        <name>0.0.0.0/0</name>
+        <next-hop>10.1.0.1</next-hop>
+       </route>
+      </static>
+     </routing-options>
+    </configuration>
+   </config>
+  </edit-config>
+</rpc>

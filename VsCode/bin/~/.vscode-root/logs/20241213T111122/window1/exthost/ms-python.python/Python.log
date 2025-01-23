@@ -1,0 +1,56 @@
+2024-12-13 11:17:18.424 [info] Experiment 'pythonRecommendTensorboardExt' is active
+2024-12-13 11:17:18.424 [info] Experiment 'pythonTerminalEnvVarActivation' is active
+2024-12-13 11:17:18.424 [info] Experiment 'pythonTestAdapter' is active
+2024-12-13 11:17:18.440 [warning] Dir "/home/pius/Documents/VsCode/.pixi/envs" is not watchable (directory does not exist)
+2024-12-13 11:17:18.469 [info] Starting Environment refresh
+2024-12-13 11:17:18.469 [info] Searching for interpreters in posix paths locator
+2024-12-13 11:17:18.474 [info] Searching for pyenv environments
+2024-12-13 11:17:18.474 [info] Searching for conda environments
+2024-12-13 11:17:18.474 [info] Searching for global virtual environments
+2024-12-13 11:17:18.474 [info] Searching for custom virtual environments
+2024-12-13 11:17:18.480 [info] pyenv is not installed
+2024-12-13 11:17:18.480 [info] Finished searching for pyenv environments: 10 milliseconds
+2024-12-13 11:17:18.480 [info] Finished searching for custom virtual envs: 9 milliseconds
+2024-12-13 11:17:18.486 [info] > conda info --json
+2024-12-13 11:17:18.494 [info] > hatch env show --json
+2024-12-13 11:17:18.494 [info] cwd: .
+2024-12-13 11:17:18.502 [info] > pyenv which python
+2024-12-13 11:17:18.502 [info] cwd: .
+2024-12-13 11:17:18.502 [info] Finished searching for global virtual envs: 31 milliseconds
+2024-12-13 11:17:18.511 [info] Found: /bin/python3 --> /bin/python3.12
+2024-12-13 11:17:18.512 [info] Found: /bin/python3.12 --> /bin/python3.12
+2024-12-13 11:17:18.527 [info] Found: /usr/bin/python3 --> /usr/bin/python3.12
+2024-12-13 11:17:18.528 [info] Found: /usr/bin/python3.12 --> /usr/bin/python3.12
+2024-12-13 11:17:18.534 [info] > ./bin/python -I ~/.vscode/extensions/ms-python.python-2024.22.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2024.22.0-linux-x64/python_files/interpreterInfo.py
+2024-12-13 11:17:18.560 [info] Finished searching for interpreters in posix paths locator: 88 milliseconds
+2024-12-13 11:17:18.560 [info] > /bin/python3 -I ~/.vscode/extensions/ms-python.python-2024.22.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2024.22.0-linux-x64/python_files/interpreterInfo.py
+2024-12-13 11:17:18.578 [info] > /usr/bin/python3 -I ~/.vscode/extensions/ms-python.python-2024.22.0-linux-x64/python_files/get_output_via_markers.py ~/.vscode/extensions/ms-python.python-2024.22.0-linux-x64/python_files/interpreterInfo.py
+2024-12-13 11:17:18.578 [info] Environments refresh paths discovered (event): 111 milliseconds
+2024-12-13 11:17:18.578 [info] Environments refresh paths discovered: 111 milliseconds
+2024-12-13 11:17:18.605 [info] Environments refresh finished (event): 138 milliseconds
+2024-12-13 11:17:18.611 [info] Environment refresh took 144 milliseconds
+2024-12-13 11:17:18.615 [info] Python interpreter path: ./bin/python
+2024-12-13 11:17:18.880 [info] Shell integration status changed, can confirm it's working.
+2024-12-13 11:17:18.887 [info] > . ./bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2024.22.0-linux-x64/python_files/printEnvVariables.py
+2024-12-13 11:17:18.887 [info] shell: bash
+2024-12-13 11:17:18.911 [info] > /bin/python3 ~/.vscode/extensions/ms-python.python-2024.22.0-linux-x64/python_files/printEnvVariables.py
+2024-12-13 11:17:18.911 [info] shell: bash
+2024-12-13 11:17:18.934 [info] Setting environment variable VIRTUAL_ENV in collection to /home/pius/Documents/VsCode {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2024-12-13 11:17:18.934 [info] Setting environment variable VIRTUAL_ENV_PROMPT in collection to (VsCode)  {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2024-12-13 11:17:18.934 [info] Prepending environment variable PS1 in collection with (VsCode)  {"applyAtShellIntegration":true,"applyAtProcessCreation":false}
+2024-12-13 11:17:18.934 [info] Prepending environment variable PATH in collection with /root/.vscode/extensions/ms-python.python-2024.22.0-linux-x64/python_files/deactivate/bash:/home/pius/Documents/VsCode/bin: {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2024-12-13 11:17:18.935 [info] Send text to terminal: /bin/python3 /root/.vscode/extensions/ms-python.python-2024.22.0-linux-x64/python_files/printEnvVariablesToFile.py /root/.vscode/extensions/ms-python.python-2024.22.0-linux-x64/python_files/deactivate/bash/envVars.txt
+2024-12-13 11:17:19.622 [info] > . ./bin/activate && echo 'e8b39361-0157-4923-80e1-22d70d46dee6' && python ~/.vscode/extensions/ms-python.python-2024.22.0-linux-x64/python_files/printEnvVariables.py
+2024-12-13 11:17:19.622 [info] shell: bash
+2024-12-13 11:17:19.643 [info] Setting environment variable VIRTUAL_ENV in collection to /home/pius/Documents/VsCode {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2024-12-13 11:17:19.644 [info] Setting environment variable VIRTUAL_ENV_PROMPT in collection to (VsCode)  {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2024-12-13 11:17:19.644 [info] Prepending environment variable PS1 in collection with (VsCode)  {"applyAtShellIntegration":true,"applyAtProcessCreation":false}
+2024-12-13 11:17:19.644 [info] Prepending environment variable PATH in collection with /root/.vscode/extensions/ms-python.python-2024.22.0-linux-x64/python_files/deactivate/bash:/home/pius/Documents/VsCode/bin: {"applyAtShellIntegration":true,"applyAtProcessCreation":true}
+2024-12-13 11:17:19.882 [info] Starting Pylance language server.
+2024-12-13 11:18:52.397 [info] Discover tests for workspace name: undefined - uri: /home/pius/Documents/VsCode/bin/~/.vscode-root/User/settings.json
+2024-12-13 11:19:11.953 [info] Discover tests for workspace name: undefined - uri: /home/pius/Documents/VsCode/bin/~/.vscode-root/User/settings.json
+2024-12-13 11:19:48.762 [info] Discover tests for workspace name: undefined - uri: /home/pius/Documents/VsCode/bin/~/.vscode-root/User/settings.json
+2024-12-13 11:19:50.800 [info] Discover tests for workspace name: undefined - uri: /home/pius/Documents/VsCode/bin/~/.vscode-root/User/settings.json
+2024-12-13 11:19:52.890 [info] Discover tests for workspace name: undefined - uri: /home/pius/Documents/VsCode/bin/~/.vscode-root/User/settings.json
+2024-12-13 11:19:56.353 [info] Discover tests for workspace name: undefined - uri: /home/pius/Documents/VsCode/bin/~/.vscode-root/User/settings.json
+2024-12-13 11:20:02.143 [info] Discover tests for workspace name: undefined - uri: /home/pius/Documents/VsCode/bin/~/.vscode-root/User/settings.json

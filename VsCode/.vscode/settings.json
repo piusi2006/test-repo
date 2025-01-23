@@ -1,0 +1,9 @@
+{
+    "ansible.python.interpreterPath": "/home/pius/Documents/VsCode/bin/python",
+    "yaml.schemas": {
+        "https://raw.githubusercontent.com/ansible/ansible-lint/main/src/ansiblelint/schemas/inventory.json": [
+            "file:///home/pius/Documents/VsCode/bin/ansible_test/inventory.yaml",
+            "file:///home/pius/Documents/VsCode/bin/ansible_test/inventory.yml"
+        ]
+    }
+}

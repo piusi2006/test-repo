@@ -1,0 +1,103 @@
+2024-12-13 11:17:11.219 [info] Getting Manifest... ms-python.python
+2024-12-13 11:17:11.297 [info] Installing extension: ms-python.python {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/root/.vscode/extensions/extensions.json","path":"/root/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.95.3","date":"2024-11-13T14:50:04.152Z"}}
+2024-12-13 11:17:11.761 [info] Getting Manifest... ms-python.vscode-pylance
+2024-12-13 11:17:11.776 [info] Getting Manifest... ms-python.debugpy
+2024-12-13 11:17:11.810 [info] Installing extension: ms-python.vscode-pylance {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/root/.vscode/extensions/extensions.json","path":"/root/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.95.3","date":"2024-11-13T14:50:04.152Z"},"context":{"dependecyOrPackExtensionInstall":true}}
+2024-12-13 11:17:11.811 [info] Installing extension: ms-python.debugpy {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/root/.vscode/extensions/extensions.json","path":"/root/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.95.3","date":"2024-11-13T14:50:04.152Z"},"context":{"dependecyOrPackExtensionInstall":true}}
+2024-12-13 11:17:14.008 [info] Extension signature verification result for ms-python.python: Success. Executed: true. Duration: 1029ms.
+2024-12-13 11:17:14.104 [info] Extension signature verification result for ms-python.debugpy: Success. Executed: true. Duration: 914ms.
+2024-12-13 11:17:14.400 [info] Extension signature verification result for ms-python.vscode-pylance: Success. Executed: true. Duration: 813ms.
+2024-12-13 11:17:14.625 [info] Extracted extension to file:///root/.vscode/extensions/ms-python.debugpy-2024.14.0-linux-x64: ms-python.debugpy
+2024-12-13 11:17:14.629 [info] Renamed to /root/.vscode/extensions/ms-python.debugpy-2024.14.0-linux-x64
+2024-12-13 11:17:14.711 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at hm.create (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39254)
+    at Es (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39361)
+    at Fr.ib (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:22677)
+    at Fr.stat (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:16010)
+    at async Zl.stat (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:84491)
+    at async Jl.yb (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:66605)
+2024-12-13 11:17:15.474 [info] Extracted extension to file:///root/.vscode/extensions/ms-python.python-2024.22.0-linux-x64: ms-python.python
+2024-12-13 11:17:15.480 [info] Renamed to /root/.vscode/extensions/ms-python.python-2024.22.0-linux-x64
+2024-12-13 11:17:15.561 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at hm.create (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39254)
+    at Es (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39361)
+    at Fr.ib (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:22677)
+    at Fr.stat (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:16010)
+    at async Zl.stat (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:84491)
+    at async Jl.yb (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:66605)
+2024-12-13 11:17:17.896 [info] Extracted extension to file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.12.1: ms-python.vscode-pylance
+2024-12-13 11:17:17.900 [info] Renamed to /root/.vscode/extensions/ms-python.vscode-pylance-2024.12.1
+2024-12-13 11:17:17.917 [info] Extension installed successfully: ms-python.debugpy vscode-userdata:/root/.vscode/extensions/extensions.json
+2024-12-13 11:17:17.917 [info] Extension installed successfully: ms-python.python vscode-userdata:/root/.vscode/extensions/extensions.json
+2024-12-13 11:17:17.917 [info] Extension installed successfully: ms-python.vscode-pylance vscode-userdata:/root/.vscode/extensions/extensions.json
+2024-12-13 11:17:17.985 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at hm.create (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39254)
+    at Es (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39361)
+    at Fr.ib (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:22677)
+    at Fr.stat (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:16010)
+    at async Zl.stat (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:84491)
+    at async Jl.yb (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:66605)
+2024-12-13 11:17:54.063 [info] Getting Manifest... dracula-theme.theme-dracula
+2024-12-13 11:17:54.089 [info] Installing extension: dracula-theme.theme-dracula {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/root/.vscode/extensions/extensions.json","path":"/root/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.95.3","date":"2024-11-13T14:50:04.152Z"}}
+2024-12-13 11:17:55.255 [info] Extension signature verification result for dracula-theme.theme-dracula: Success. Executed: true. Duration: 899ms.
+2024-12-13 11:17:55.267 [info] Extracted extension to file:///root/.vscode/extensions/dracula-theme.theme-dracula-2.25.1: dracula-theme.theme-dracula
+2024-12-13 11:17:55.269 [info] Renamed to /root/.vscode/extensions/dracula-theme.theme-dracula-2.25.1
+2024-12-13 11:17:55.279 [info] Extension installed successfully: dracula-theme.theme-dracula vscode-userdata:/root/.vscode/extensions/extensions.json
+2024-12-13 11:17:55.348 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at hm.create (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39254)
+    at Es (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39361)
+    at Fr.ib (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:22677)
+    at Fr.stat (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:16010)
+    at async Zl.stat (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:84491)
+    at async Jl.yb (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:66605)
+2024-12-13 11:18:35.987 [info] Getting Manifest... ms-toolsai.jupyter
+2024-12-13 11:18:36.015 [info] Installing extension: ms-toolsai.jupyter {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/root/.vscode/extensions/extensions.json","path":"/root/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.95.3","date":"2024-11-13T14:50:04.152Z"}}
+2024-12-13 11:18:36.299 [info] Getting Manifest... ms-toolsai.jupyter-keymap
+2024-12-13 11:18:36.316 [info] Getting Manifest... ms-toolsai.jupyter-renderers
+2024-12-13 11:18:36.330 [info] Getting Manifest... ms-toolsai.vscode-jupyter-cell-tags
+2024-12-13 11:18:36.345 [info] Getting Manifest... ms-toolsai.vscode-jupyter-slideshow
+2024-12-13 11:18:36.388 [info] Installing extension: ms-toolsai.jupyter-keymap {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/root/.vscode/extensions/extensions.json","path":"/root/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.95.3","date":"2024-11-13T14:50:04.152Z"},"context":{"dependecyOrPackExtensionInstall":true}}
+2024-12-13 11:18:36.389 [info] Installing extension: ms-toolsai.jupyter-renderers {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/root/.vscode/extensions/extensions.json","path":"/root/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.95.3","date":"2024-11-13T14:50:04.152Z"},"context":{"dependecyOrPackExtensionInstall":true}}
+2024-12-13 11:18:36.389 [info] Installing extension: ms-toolsai.vscode-jupyter-cell-tags {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/root/.vscode/extensions/extensions.json","path":"/root/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.95.3","date":"2024-11-13T14:50:04.152Z"},"context":{"dependecyOrPackExtensionInstall":true}}
+2024-12-13 11:18:36.389 [info] Installing extension: ms-toolsai.vscode-jupyter-slideshow {"isMachineScoped":false,"installPreReleaseVersion":false,"pinned":false,"profileLocation":{"$mid":1,"external":"vscode-userdata:/root/.vscode/extensions/extensions.json","path":"/root/.vscode/extensions/extensions.json","scheme":"vscode-userdata"},"installOnlyNewlyAddedFromExtensionPack":true,"isApplicationScoped":false,"productVersion":{"version":"1.95.3","date":"2024-11-13T14:50:04.152Z"},"context":{"dependecyOrPackExtensionInstall":true}}
+2024-12-13 11:18:37.472 [info] Extension signature verification result for ms-toolsai.vscode-jupyter-slideshow: Success. Executed: true. Duration: 666ms.
+2024-12-13 11:18:37.487 [info] Extracted extension to file:///root/.vscode/extensions/ms-toolsai.vscode-jupyter-slideshow-0.1.6: ms-toolsai.vscode-jupyter-slideshow
+2024-12-13 11:18:37.489 [info] Renamed to /root/.vscode/extensions/ms-toolsai.vscode-jupyter-slideshow-0.1.6
+2024-12-13 11:18:37.541 [info] Extension signature verification result for ms-toolsai.vscode-jupyter-cell-tags: Success. Executed: true. Duration: 740ms.
+2024-12-13 11:18:37.556 [info] Extracted extension to file:///root/.vscode/extensions/ms-toolsai.vscode-jupyter-cell-tags-0.1.9: ms-toolsai.vscode-jupyter-cell-tags
+2024-12-13 11:18:37.558 [info] Renamed to /root/.vscode/extensions/ms-toolsai.vscode-jupyter-cell-tags-0.1.9
+2024-12-13 11:18:37.570 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at hm.create (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39254)
+    at Es (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39361)
+    at Fr.ib (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:22677)
+    at Fr.stat (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:16010)
+    at async Zl.stat (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:84491)
+    at async Jl.yb (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:66605)
+2024-12-13 11:18:37.611 [info] Extension signature verification result for ms-toolsai.jupyter-renderers: Success. Executed: true. Duration: 784ms.
+2024-12-13 11:18:37.618 [info] Extension signature verification result for ms-toolsai.jupyter-keymap: Success. Executed: true. Duration: 752ms.
+2024-12-13 11:18:37.626 [info] Extracted extension to file:///root/.vscode/extensions/ms-toolsai.jupyter-keymap-1.1.2: ms-toolsai.jupyter-keymap
+2024-12-13 11:18:37.628 [info] Renamed to /root/.vscode/extensions/ms-toolsai.jupyter-keymap-1.1.2
+2024-12-13 11:18:37.785 [info] Extracted extension to file:///root/.vscode/extensions/ms-toolsai.jupyter-renderers-1.0.21: ms-toolsai.jupyter-renderers
+2024-12-13 11:18:37.788 [info] Renamed to /root/.vscode/extensions/ms-toolsai.jupyter-renderers-1.0.21
+2024-12-13 11:18:37.869 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at hm.create (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39254)
+    at Es (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39361)
+    at Fr.ib (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:22677)
+    at Fr.stat (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:16010)
+    at async Zl.stat (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:84491)
+    at async Jl.yb (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:66605)
+2024-12-13 11:18:37.870 [info] Extension signature verification result for ms-toolsai.jupyter: Success. Executed: true. Duration: 776ms.
+2024-12-13 11:18:38.053 [info] Extracted extension to file:///root/.vscode/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64: ms-toolsai.jupyter
+2024-12-13 11:18:38.056 [info] Renamed to /root/.vscode/extensions/ms-toolsai.jupyter-2024.10.0-linux-x64
+2024-12-13 11:18:38.076 [info] Extension installed successfully: ms-toolsai.vscode-jupyter-slideshow vscode-userdata:/root/.vscode/extensions/extensions.json
+2024-12-13 11:18:38.076 [info] Extension installed successfully: ms-toolsai.vscode-jupyter-cell-tags vscode-userdata:/root/.vscode/extensions/extensions.json
+2024-12-13 11:18:38.076 [info] Extension installed successfully: ms-toolsai.jupyter-keymap vscode-userdata:/root/.vscode/extensions/extensions.json
+2024-12-13 11:18:38.077 [info] Extension installed successfully: ms-toolsai.jupyter-renderers vscode-userdata:/root/.vscode/extensions/extensions.json
+2024-12-13 11:18:38.077 [info] Extension installed successfully: ms-toolsai.jupyter vscode-userdata:/root/.vscode/extensions/extensions.json
+2024-12-13 11:18:38.143 [error] [uncaught exception in sharedProcess]: Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp': EntryNotFound (FileSystemError): Error: ENOENT: no such file or directory, stat '/root/.vscode/extensions/extensions.json.vsctmp'
+    at hm.create (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39254)
+    at Es (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:35:39361)
+    at Fr.ib (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:22677)
+    at Fr.stat (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:71:16010)
+    at async Zl.stat (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:84491)
+    at async Jl.yb (file:///snap/code/176/usr/share/code/resources/app/out/vs/code/electron-utility/sharedProcess/sharedProcessMain.js:70:66605)

@@ -1,0 +1,34 @@
+# This is a manual on how to work with and execute playbooks.
+# Playbooks use special syntax that define its components:
+1. Keywords - These are words that define objects which maniuplate ansibles behavior. The following are examples:
+- Name: (Used for documentation purposes)
+- hosts: Defines the machines to target
+- connection: Allows you to define which connection plugin is used for communication with the hosts.
+
+2. Tasks - These are objects of a play which call on a specific module to perform specific actions on the intended hosts for e.g.
+tasks:
+    - name: run show ip int brief
+      cisco.ios.ios_command: (This is the module being called upon)
+        commands: show ip interface brief
+      register: myinterfaces
+
+# To run your playbook, enter:
+'ansible-playbook playbook.yml'. Optionally, add '--verbose' to the end if you want more detailed output.
+
+# To check your playbook before running it, use:
+'ansible-playbook --check playbook.yaml'
+Executing this command will run the playbook normally, but instead of implementing any modifications, Ansible will simply provide a report on the changes it 
+would have made. This report encompasses details such as file modifications, command execution, and module calls.
+
+#The ansible-playbook command offers several options for verification, including --check, --diff, --list-hosts, --list-tasks, and --syntax-check.
+
+# Ansible ships with 3 types of common core modules for all vendors:
+1. command - Used to send exec-level commands to network devices. These are implemented
+and named as xos_command (i.e., ios_command, nxos_command, junos_command and so on).
+
+2. config - Used to send configuration commands to network devices. These are implemented
+and named as xos_config (i.e., ios_config, nxos_config, junos_config and so on).
+
+3. facts - Used to gather information from network devices such as OS version, hardware
+platform, serial number, hostname, neighbors, and much more. These are implemented
+and named as xos_facts (i.e., ios_facts, nxos_facts, junos_facts)

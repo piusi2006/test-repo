@@ -1,0 +1,29 @@
+---
+
+- name: A playbook to view the interface related configuration and statistics
+  hosts: cml
+  connection: local
+  gather_facts: no
+
+  tasks:
+    - name: Generate a config file for viewing interface data
+      ansible.builtin.template:
+        src: "./templates/interfaces/ios.j2"
+        dest: "./templates/config/{{ inventory_hostname }}.cfg"
+
+- name: 2nd Play. Run the interface commands from Play 1
+  hosts: cml
+  connection: local
+  gather_facts: no
+
+  tasks:
+    - name: Run commands for Cisco IOS
+      cisco.ios.ios_command:
+        commands:
+          - show interface GigabitEthernet1 summary
+          - show running-config interface GigabitEthernet1
+      register: interfaces
+    
+    - name: Print the Output of the commands
+      debug:
+        var: interfaces["stdout_lines"][0]

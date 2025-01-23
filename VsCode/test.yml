@@ -1,0 +1,28 @@
+---
+- iosxe:
+    host: 192.168.0.42
+
+- iosxe:
+    vars:
+      - ansible_connection: ansible.netcommon.network_cli
+      - ansible_user: admin
+      - ansible_password: test123
+      - ansible_become: yes
+      - ansible_become_method: enable
+      - ansible_network_os: cisco.ios.ios
+      - ansible_python_interpreter: /home/pius/Documents/VsCode/bin/python3.12
+
+- testlab:
+    host1: 10.1.0.1
+    host2: 10.1.0.10
+    host3: 10.1.0.11
+
+- testlab:
+    vars:
+      - ansible_connection: ansible.netcommon.network_cli
+      - ansible_user: admin
+      - ansible_password: test123
+      - ansible_become: yes
+      - ansible_become_method: enable
+      - ansible_network_os: cisco.ios.ios
+      - ansible_python_interpreter: /home/pius/Documents/VsCode/bin/python3.12

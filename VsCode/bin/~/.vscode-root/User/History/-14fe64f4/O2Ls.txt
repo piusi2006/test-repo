@@ -1,0 +1,30 @@
+# Here are some optional features that can be configured in your ansible environment. Some features can be seen as imperative.
+1. 'Ansible-vault' - A mechanism for encryption & decryption of sensitive data using passwords. Here's how you encrypt a variable and a file:
+
+To encrypt a file:
+- First, create your vault file which will house your vault passwords:
+echo 'password' > 'filename.txt'
+
+Next, we have 2 options. We can either create a new encrypted file before we store the contents OR we can encrypt an existing file. Here's how you do both:
+- To create encrypted File:
+"ansible-vault create 'filename.yml'". Ensure that you are in the current directory where you want the file stored OR you can enter the Path. It will also prompt you to enter
+a password which it will use for encryption/decryption. (Ensure you store this password somehwere safe).
+
+- To encrypt an existing file:
+"ansible-vault encrypt 'filename'". It will prompt you for a password used to encrypt the data. You can use the password you used earlier.
+
+NOTE: Ansible will always check the path relative to where your inventory & playbook files are kept when it needs to pull variables from a group_vars OR host_vars file. For this reason, we 
+will need to ensure that we define where the vault password to decrypt the data needed by ansible is kept when it comes time to execute our playbooks. There are 3 ways to do this:
+- Prompt for the password during the playbook run
+- Specify the location to a password file during the playbook run
+- Specify the location to the password in ansible.cfg
+
+For OPTION 1: We just add '--ask-vault-pass' unto the end of our ansible-playbook run command e.g. 'ansible-playbook <playbookfile.yml> --ask-vault-pass '
+Then, enter:
+'ansible-vault encrypt_string <password_source> '<string_to_encrypt>' --name '<string_name_of_variable>''
+- vault password source = A prompt, file, or script, with or without a vault ID.
+- string to encrypt = The variable in string format that you want to encrypt.
+- string name = Name of the variable for e.g. 'ansible_password'
+
+
+'ansible-playbook --extra-vars @secrets.enc --vault-password-file secrets.pass'

@@ -1,0 +1,71 @@
+# This is a document detailing the steps taken to setup ansible on an ubuntu linux machine.
+
+Before installing ansible, ensure that you have the latest repository packages using the following commands:
+sudo apt update
+sudo apt install software-properties-common
+sudo add-apt-repository --yes --update ppa:ansible/ansible
+sudo apt install ansible (This is optional, as it installs it in the global environment. See next step for venv)
+
+1. First is to install Ansible. There are a few ways to do this, but the method used was to use 'pip' and install it in my virtual envrionment as such:
+'sudo pip install ansible' - this installs the full suite of ansible. 'ansible-core' installs a miinimalistic version.
+
+2. (Optional) Create a directory which will be used for storing your ansible files. Using a single directory structure makes it easier to add to source control 
+as well as to reuse and share automation content.
+'mkdir x && cd <directory>' - This creates the directory and then changes to the new directory.
+
+3. Check which ansible version you have installed:
+'ansible --version' - Note, you might need to have your venv activated to utilize this command.
+
+4. Next confirm that its working by running the ping module against local host:
+'ansible localhost -m ping'
+
+5. Next is to install the configuration file which is necessary to depict the behaviour and settings of your ansible environment.
+NOTE: If installing Ansible from a package manager, the latest ansible.cfg file should be present in /etc/ansible, possibly as a .rpmnew file (or other) as 
+appropriate in the case of updates.
+In this example though, we used pip in our venv so we will need to use the ansible-config tool to create a config file to override the default settings.
+The ansible-config tool is located in the venv/bin/ location.
+'ansible-config init --disabled -t all > ansible.cfg'  - This will include available plugins to create a more complete Ansible configuration
+
+6. Next we will build out inventory. This is the file that defines our hosts (managed nodes) that we want to automate along with any variables such as ports,
+usernames & passwords etc. To do this, we will navigate to our ansible directory we created earlier and configure a inventory.ini file:
+'touch inventory.ini' - You can use a text editor to edit the file and populate it with your hosts.
+
+7. Before we can test connectivity to our hosts, we must setup a public key on the controller
+'ssh-keygen' - This will generate a public SSH key. You can use the default options presented to you in the prompts. Ensure you take note of the path where the
+keys will be kept. You can also verify what keys are kept using 'ls .ssh/'
+
+8. Next step is to copy that public key to the host machine using the command:
+'ssh-copy-id -i .ssh/id_rsa.pub <host_ip>' - For this to work, ssh must be enabled on the other machine. It will prompt you to enter the credentials for the 
+account that is used to authenticate via ssh on the host. If successful, you should see 'number of keys added x' To further confirm that the correct key was 
+added, you can do 'ssh <host>' to check that it works.
+
+- (Optional) We will install ansible-pylibssh as this is a more robust connection plugin for ssh'ing to network devices using ansible
+'pip install ansible-pylibssh' - Ensure you are in your venv so that its installed there.
+
+9. Next steps will be to verify our inventory and test connectivity:
+'ansible-inventory -i inventory.ini --list' - This lists all the hosts in your inventory.
+'ansible <group> -m ping -i inventory.ini' - This runs the ping module against all hosts in the inventory. Note, it will use the current logged in user as default
+username. To change that, add '-u <user>' before 'myhosts' in the syntax.
+
+10. Next we will create our playbook which is a .yml file that lists out the tasks that we want to automate. 
+Navigate to your ansible directory and enter 'touch <name>.yml'
+
+11. Now we can start using ansible to run playbooks against our network devices:
+
+# Here is an example of a ansbile play ran manually from the CLI:
+ansible all -i 192.168.0.42, -c ansible.netcommon.network_cli -u admin -m cisco.ios.ios_facts -e ansible_network_os=cisco.ios.ios
+
+The Flags are indicated below:
+- the host group(s) to which the command should apply (in this case, all)
+- the inventory (-i, the device or devices to target. Without the trailing comma, -i points to an inventory file)
+- the connection method (-c, the method for connecting and executing ansible)
+- the user (-u, the username for the SSH connection)
+- the SSH connection method (-k, please prompt for the password)
+- the module (-m, the Ansible module to run, using the fully qualified collection name (FQCN))
+- an extra variable ( -e, in this case, setting the network OS value)
+
+# Here is an example of the syntax used to run your playbook against your inventory:
+'ansible-playbook -i <inventory> -k <playbook>' - NOTE, the -k is to prompt for the ssh password as network devices use username and passwords instead of ssh keys.
+
+
+

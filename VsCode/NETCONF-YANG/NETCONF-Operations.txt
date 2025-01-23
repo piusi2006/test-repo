@@ -1,0 +1,62 @@
+1. get-config(source, filter) → data
+Retrieve all or part of the configuration datastore source.
+
+2. edit-config(target, default-operation, test-option, error-option, config)
+Edit the configuration datastore target by merging, replacing, creating, or deleting new config elements. The test-option parameter allows you to do a “dry run”
+while the error-option parameter controls how the server reacts to errors (stop, continue, rollback).
+
+3. copy-config(target, source)
+Copy the content of the configuration datastore source to the configuration datastore target.
+
+4. delete-config(target)
+Delete the named configuration datastore target.
+
+5. lock(target)
+Lock the configuration datastore target.
+
+6. unlock(target)
+Unlock the configuration datastore target.
+
+7. validate(source)
+Validate the configuration datastore source (:validate capability).
+
+8. get(filter) → data
+Retrieve all or part of the running configuration data store and merged with the device’s state information.
+
+9. close-session()
+Gracefully close the current session.
+
+10. kill-session(session-id)
+Force the termination of the session session-id.
+
+11. discard-changes()
+Revert the candidate configuration datastore to the running configuration (:candidate capability).
+
+12. commit(confirmed, confirm-timeout, persist, persist-id)
+Commit the candidate to the running configuration datastore with an optional automatic rollback (:candidate, :confirmed-commit capability).
+
+13. cancel-commit(persist-id)
+Cancel an ongoing confirmed commit identified by persist-id (:confirmed-commit capability).
+
+14. partial-lock(select)
+Create a partial lock on the running configuration datastore on the nodes / subtree identified by the select XPath expression (RFC 5717).
+
+15. partial-unlock(lock-id)
+Remove a previously established partial lock (RFC 5717).
+
+16. create-subscription(stream, filter, start, stop)
+Subscribe to a notification stream using an optional filter; the optional start/stop times support the replay of notifications (RFC 5277).
+
+NOTE: Embedded operation attributes specify how a configuration is modified by an edit-config() configuration.
+
+17. merge:
+Configuration data is merged with the configuration.
+
+18. replace:
+Configuration data replaces existing configuration.
+
+19. create:
+Configuration data is added iff it does not already exist.
+
+20. delete:
+Configuration data is deleted from the datastore.

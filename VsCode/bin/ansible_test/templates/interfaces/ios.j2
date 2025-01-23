@@ -1,0 +1,7 @@
+{% for interface in interfaces.interface_name %}
+{% if interface.enabled == true %}
+show interface {{interface.name}} summary
+show running-config interface {{interface.name}}
+show interface {{interface.name}} switchport
+{% endif %}
+{% endfor %}

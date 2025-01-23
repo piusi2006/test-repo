@@ -1,0 +1,15 @@
+---
+# This is a variable file for host01 in the cml group. Its being used by jinja to build a template for show interface commands.
+
+interfaces:
+  interface_name:
+    - name: GigabitEthernet1
+      enabled: true
+    - name: GigabitEthernet2
+      enabled: false
+    - name: GigabitEthernet3
+      enabled: false
+    - name: GigabitEthernet4
+      enabled: false
+
+

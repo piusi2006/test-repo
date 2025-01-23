@@ -1,0 +1,47 @@
+2024-12-13 11:17:19.431 [info] (Client) Pylance async client (2024.12.1) started with python extension (2024.22.0)
+2024-12-13 11:17:19.868 [info] [Info  - 11:17:19] (964146) Server root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.12.1/dist
+2024-12-13 11:17:19.868 [info] [Info  - 11:17:19] (964146) Pylance language server 2024.12.1 (pyright version 1.1.389, commit ce1325fc) starting
+2024-12-13 11:17:19.868 [info] [Info  - 11:17:19] (964146) Starting service instance "VsCode"
+2024-12-13 11:17:19.911 [info] [Info  - 11:17:19] (964146) Setting environmentName for service "VsCode": "3.12.3 (VsCode venv)"
+2024-12-13 11:17:19.911 [info] [Info  - 11:17:19] (964146) Setting pythonPath for service "VsCode": "/home/pius/Documents/VsCode/bin/python"
+2024-12-13 11:17:19.911 [info] [Info  - 11:17:19] (964146) No include entries specified; assuming /home/pius/Documents/VsCode
+2024-12-13 11:17:19.912 [info] [Info  - 11:17:19] (964146) Auto-excluding **/node_modules
+2024-12-13 11:17:19.912 [info] [Info  - 11:17:19] (964146) Auto-excluding **/__pycache__
+2024-12-13 11:17:19.912 [info] [Info  - 11:17:19] (964146) Auto-excluding **/.*
+2024-12-13 11:17:19.935 [info] [Info  - 11:17:19] (964146) Assuming Python version 3.12.3.final.0
+2024-12-13 11:17:19.981 [info] [Info  - 11:17:19] (964146) Auto-excluding /home/pius/Documents/VsCode
+2024-12-13 11:17:19.982 [info] [Info  - 11:17:19] (964146) No source files found.
+2024-12-13 11:17:20.334 [info] [Info  - 11:17:20] (964146) Background analysis(1) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.12.1/dist
+2024-12-13 11:17:20.335 [info] [Info  - 11:17:20] (964146) Background analysis(1) started
+2024-12-13 11:17:55.306 [info] [Info  - 11:17:55] Server process exited successfully
+2024-12-13 11:17:55.848 [info] (Client) Pylance async client (2024.12.1) started with python extension (2024.22.0)
+2024-12-13 11:17:56.305 [info] [Info  - 11:17:56] (964484) Server root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.12.1/dist
+2024-12-13 11:17:56.306 [info] [Info  - 11:17:56] (964484) Pylance language server 2024.12.1 (pyright version 1.1.389, commit ce1325fc) starting
+2024-12-13 11:17:56.311 [info] [Info  - 11:17:56] (964484) Starting service instance "VsCode"
+2024-12-13 11:17:56.337 [info] [Info  - 11:17:56] (964484) Setting environmentName for service "VsCode": "3.12.3 (VsCode venv)"
+2024-12-13 11:17:56.337 [info] [Info  - 11:17:56] (964484) Setting pythonPath for service "VsCode": "/home/pius/Documents/VsCode/bin/python"
+2024-12-13 11:17:56.337 [info] [Info  - 11:17:56] (964484) No include entries specified; assuming /home/pius/Documents/VsCode
+2024-12-13 11:17:56.338 [info] [Info  - 11:17:56] (964484) Auto-excluding **/node_modules
+2024-12-13 11:17:56.338 [info] [Info  - 11:17:56] (964484) Auto-excluding **/__pycache__
+2024-12-13 11:17:56.338 [info] [Info  - 11:17:56] (964484) Auto-excluding **/.*
+2024-12-13 11:17:56.360 [info] [Info  - 11:17:56] (964484) Assuming Python version 3.12.3.final.0
+2024-12-13 11:17:56.409 [info] [Info  - 11:17:56] (964484) Auto-excluding /home/pius/Documents/VsCode
+2024-12-13 11:17:56.410 [info] [Info  - 11:17:56] (964484) No source files found.
+2024-12-13 11:17:56.788 [info] [Info  - 11:17:56] (964484) Background analysis(1) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.12.1/dist
+2024-12-13 11:17:56.790 [info] [Info  - 11:17:56] (964484) Background analysis(1) started
+2024-12-13 11:18:38.155 [info] [Info  - 11:18:38] Server process exited successfully
+2024-12-13 11:18:38.755 [info] (Client) Pylance async client (2024.12.1) started with python extension (2024.22.0)
+2024-12-13 11:18:39.159 [info] [Info  - 11:18:39] (964910) Server root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.12.1/dist
+2024-12-13 11:18:39.160 [info] [Info  - 11:18:39] (964910) Pylance language server 2024.12.1 (pyright version 1.1.389, commit ce1325fc) starting
+2024-12-13 11:18:39.164 [info] [Info  - 11:18:39] (964910) Starting service instance "VsCode"
+2024-12-13 11:18:39.188 [info] [Info  - 11:18:39] (964910) Setting environmentName for service "VsCode": "3.12.3 (VsCode venv)"
+2024-12-13 11:18:39.188 [info] [Info  - 11:18:39] (964910) Setting pythonPath for service "VsCode": "/home/pius/Documents/VsCode/bin/python"
+2024-12-13 11:18:39.189 [info] [Info  - 11:18:39] (964910) No include entries specified; assuming /home/pius/Documents/VsCode
+2024-12-13 11:18:39.189 [info] [Info  - 11:18:39] (964910) Auto-excluding **/node_modules
+2024-12-13 11:18:39.189 [info] [Info  - 11:18:39] (964910) Auto-excluding **/__pycache__
+2024-12-13 11:18:39.189 [info] [Info  - 11:18:39] (964910) Auto-excluding **/.*
+2024-12-13 11:18:39.209 [info] [Info  - 11:18:39] (964910) Assuming Python version 3.12.3.final.0
+2024-12-13 11:18:39.257 [info] [Info  - 11:18:39] (964910) Auto-excluding /home/pius/Documents/VsCode
+2024-12-13 11:18:39.258 [info] [Info  - 11:18:39] (964910) No source files found.
+2024-12-13 11:18:39.600 [info] [Info  - 11:18:39] (964910) Background analysis(1) root directory: file:///root/.vscode/extensions/ms-python.vscode-pylance-2024.12.1/dist
+2024-12-13 11:18:39.602 [info] [Info  - 11:18:39] (964910) Background analysis(1) started
